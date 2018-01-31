@@ -1,6 +1,6 @@
 describe("Validate the Codice Fiscale library", function () {
 
-    let CF = require('../lib/CodiceFiscale');
+    let CF = require('..');
 
     it("should verify a real Italian Codice Fiscale and fail on a fake one", function () {
         expect(CF.check('MNTMHL*********T')).toBeTruthy();
@@ -17,6 +17,5 @@ describe("Validate the Codice Fiscale library", function () {
         expect(CF.controllo('MNTMHL*********')).toBe('T');
         expect(CF.controllo('MNTMNT*********')).toBe('O');
     });
-
 
 });

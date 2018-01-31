@@ -1,1 +1,2 @@
-module.exports = require('./lib/CodiceFiscale');
+var CodiceFiscale = require('./lib/CodiceFiscale');
+module.exports = new CodiceFiscale();
